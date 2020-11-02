@@ -1,6 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 import i18n from './nuxt-i18n.config'
 
+const GTAG_ID = process.env.GTAG_ID
+const GAcode = `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GTAG_ID}');`
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -12,6 +15,20 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        hid: 'GAsrc',
+        src: 'https://www.googletagmanager.com/gtag/js?id=' + GTAG_ID,
+      },
+      {
+        hid: 'GAcode',
+        innerHTML: GAcode,
+      },
+    ],
+    __dangerouslyDisableSanitizersByTagID: {
+      GAsrc: ['innerHTML'],
+      GAcode: ['innerHTML'],
+    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
