@@ -1,1 +1,39 @@
-{ "title": "OGP Generator" }
+{
+  "title": "OGP Generator",
+  "top_description": [
+    "Open Graph Protocol provides a formatted link using site name, description and image when you share a link on Twitter, Facebook, etc.",
+    "This web app generates automatically OGP tags and all you have to do is to paste that."
+  ],
+  "form": {
+    "properties": {
+      "site_name": "Website name",
+      "page_title": "Page title",
+      "description": "Website's description",
+      "url": "Website's URL",
+      "image_path": "Full path of an image",
+      "content_type": "Content type"
+    },
+    "twitter": {
+      "user_name": "Twitter user name",
+      "card_type": "Twitter card type"
+    },
+    "rules": {
+      "title": { "null": "Page title is required" },
+      "url": {
+        "null": "URL is required",
+        "attention": "URL starts \"http(s)://\""
+      },
+      "image_path": {
+        "null": "Image path is required",
+        "attention": "Image path starts \"http(s)://\""
+      },
+      "content_type": {
+        "null": "Content type is required"
+      }
+    },
+    "attention": "you must fill these fields"
+  },
+  "button": "generate",
+  "content_types": ["article", "book", "profile", "website"],
+  "twitter_card_types": ["summary", "summary_large_card", "app", "player"]
+}

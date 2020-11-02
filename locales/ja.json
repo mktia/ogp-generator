@@ -1,1 +1,40 @@
-{ "title": "OGPジェネレータ" }
+{
+  "title": "OGPジェネレータ",
+  "top_description": [
+    "Open Graph ProtocolはTwitterやFaceBookなどのSNSで共有する際に、サイト名や説明，イメージ画像を整形したリンクが利用できるプロトコルです。",
+    "ウェブサイトやブログをOGPに対応させることで、より多くの人の目に触れられるようになります。",
+    "当サイトではOGPを適用したいウェブサイトやブログの情報を入れることでHTMLのソースコードを生成し、手軽にOGPを利用できるツールを提供しています。"
+  ],
+  "form": {
+    "properties": {
+      "site_name": "ウェブサイト名",
+      "page_title": "ページタイトル",
+      "description": "ウェブサイトの説明",
+      "url": "ウェブサイトのURL",
+      "image_path": "画像の絶対パス",
+      "content_type": "コンテンツの種類"
+    },
+    "twitter": {
+      "user_name": "Twitterユーザー名",
+      "card_type": "Twitterカードの種類"
+    },
+    "rules": {
+      "title": { "null": "入力してください" },
+      "url": {
+        "null": "入力してください",
+        "attention": "http(s)://で始めてください"
+      },
+      "image_path": {
+        "null": "入力してください",
+        "attention": "http(s)://で始めてください"
+      },
+      "content_type": {
+        "null": "選択してください"
+      }
+    },
+    "attention": "入力必須項目です"
+  },
+  "button": "OGP生成",
+  "content_types": ["article", "book", "profile", "website"],
+  "twitter_card_types": ["summary", "summary_large_card", "app", "player"]
+}
