@@ -8,7 +8,9 @@
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "yarn lint:js",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "fix": "yarn lint:fix"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
