@@ -8,7 +8,7 @@ v-app(light)
   v-main
     v-container
       nuxt
-  v-navigation-drawer(v-model='rightDrawer', :right='right', temporary, fixed)
+  v-navigation-drawer(v-model='rightDrawer', :right='right', temporary, fixed, dark)
     v-list
       v-list-item(
         v-for='locale in availableLocales',
