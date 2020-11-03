@@ -10,10 +10,7 @@
     v-col(cols='12', sm='10', md='8')
       .description
         p(v-for='sentence in $t("top_description")') {{ sentence }}
-  adsbygoogle(
-    data-ad-slot='3806743874',
-    data-ad-format='auto'
-  )
+  adsbygoogle(data-ad-slot='3806743874', data-ad-format='auto')
   v-row(justify='center', align='center')
     v-col(cols='12', sm='10', md='8')
       p * {{ $t("form.attention") }}
@@ -62,10 +59,7 @@
             :label='this.$t("form.twitter.card_type")'
           )
       v-btn(@click='generateOgp') {{ $t("button") }}
-  adsbygoogle(
-    data-ad-slot='3806743874',
-    data-ad-format='auto'
-  )
+  adsbygoogle(data-ad-slot='3806743874', data-ad-format='auto')
   v-row.mt-5(v-if='code != ""', justify='center', align='center')
     v-col(cols='12', sm='10', md='8')
       p.description {{ $t("about_prefix") }}
@@ -101,7 +95,8 @@ export default {
         ],
         contentType: [(v) => !!v || this.$t('form.rules.content_type.null')],
       },
-      code: '<head prefix="og: https://ogp.me/ns#">\n\n<!-- Open Graph Protocol -->\n',
+      code:
+        '<head prefix="og: https://ogp.me/ns#">\n\n<!-- Open Graph Protocol -->\n',
     }
   },
   head() {

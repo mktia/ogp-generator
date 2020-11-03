@@ -9,15 +9,19 @@ export default {
   target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    htmlAttrs:{
-      prefix:"og: https://ogp.me/ns#"
+    htmlAttrs: {
+      prefix: 'og: https://ogp.me/ns#',
     },
     titleTemplate: '%s - OGP Generator',
     title: 'ogp-generator',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Automatically generate Open Graph Protocol tags' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Automatically generate Open Graph Protocol tags',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
