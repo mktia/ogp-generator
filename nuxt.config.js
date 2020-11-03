@@ -3,6 +3,7 @@ import i18n from './nuxt-i18n.config'
 
 const GTAG_ID = process.env.GTAG_ID
 const GAcode = `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GTAG_ID}');`
+const ADSENSE_ID = process.env.ADSENSE_ID
 
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -49,7 +50,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [['nuxt-i18n', i18n]],
+  modules: [['nuxt-i18n', i18n], ['@nuxtjs/google-adsense']],
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
@@ -72,4 +73,8 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+  'google-adsense': {
+    id: ADSENSE_ID,
+    test: true,
+  },
 }
