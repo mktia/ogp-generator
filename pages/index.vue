@@ -55,6 +55,7 @@
             :items='this.$t("twitter_card_types")',
             :label='this.$t("form.twitter.card_type")'
           )
+      v-btn(@click='generateOgp') {{ $t("button") }}
   adsbygoogle(
     data-ad-slot='3806743874',
     data-ad-format='auto'
