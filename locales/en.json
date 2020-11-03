@@ -1,4 +1,8 @@
 {
+  "meta":{
+    "description":"Automatically generate Open Graph Protocol tags",
+    "url":"https://ogp.mktia.com/en"
+  },
   "title": "OGP Generator",
   "top_description": [
     "Open Graph Protocol provides a formatted link using site name, description and image when you share a link on Twitter, Facebook, etc.",

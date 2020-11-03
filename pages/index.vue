@@ -101,6 +101,24 @@ export default {
   head() {
     return {
       title: this.$t('title'),
+      meta: [
+        { hid: 'og:title', property: 'og:title', content: this.$t('title') },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.$t('meta.description'),
+        },
+        { hid: 'og:url', property: 'og:url', content: this.$t('meta.url') },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://ogp.mktia.com/ogp.png',
+        },
+        { name: 'twitter:card', content: 'summary_large_card' },
+        { name: 'twitter:site', content: '@mktia' },
+        { name: 'twitter:creator', content: '@mktia' },
+      ],
     }
   },
   methods: {

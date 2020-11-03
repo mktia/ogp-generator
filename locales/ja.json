@@ -1,4 +1,8 @@
 {
+  "meta":{
+    "description":"Open GraphプロトコルのHTMLタグを自動生成",
+    "url":"https://ogp.mktia.com"
+  },
   "title": "OGPジェネレータ",
   "top_description": [
     "Open Graph ProtocolはTwitterやFaceBookなどのSNSで共有する際に、サイト名や説明，イメージ画像を整形したリンクが利用できるプロトコルです。",
