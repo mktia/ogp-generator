@@ -62,6 +62,7 @@
   )
   v-row.mt-5(v-if='code != ""', justify='center', align='center')
     v-col(cols='12', sm='10', md='8')
+      p.description {{ $t("about_prefix") }}
       pre.ogp.pa-3
         code {{ code }}
 </template>
@@ -94,7 +95,7 @@ export default {
         ],
         contentType: [(v) => !!v || this.$t('form.rules.content_type.null')],
       },
-      code: '<!-- Open Graph Protocol -->\n',
+      code: '<head prefix="og: https://ogp.me/ns#">\n\n<!-- Open Graph Protocol -->\n',
     }
   },
   head() {
@@ -165,4 +166,5 @@ export default {
   code
     background-color: transparent
     color: #777
+    padding: initial
 </style>
