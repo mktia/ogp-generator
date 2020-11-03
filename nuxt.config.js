@@ -82,8 +82,7 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
   'google-adsense': {
-    id: ADSENSE_ID,
-    test: true,
+    id: ADSENSE_ID
   },
   generate: {
     dir: 'public',
