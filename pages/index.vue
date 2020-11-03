@@ -2,6 +2,12 @@
 .index
   v-row(justify='center', align='center')
     v-col(cols='12', sm='10', md='8')
+      v-img(
+        lazy-src='http://placehold.jp/505050/505050/1200x630.png',
+        :src='require("../static/ogp.png")'
+      )
+  v-row(justify='center', align='center')
+    v-col(cols='12', sm='10', md='8')
       .description
         p(v-for='sentence in $t("top_description")') {{ sentence }}
   adsbygoogle(
