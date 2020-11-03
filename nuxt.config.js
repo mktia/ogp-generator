@@ -8,7 +8,7 @@ const ADSENSE_ID = process.env.ADSENSE_ID
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - ogp-generator',
+    titleTemplate: '%s - OGP Generator',
     title: 'ogp-generator',
     meta: [
       { charset: 'utf-8' },

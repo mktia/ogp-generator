@@ -97,6 +97,11 @@ export default {
       code: '<!-- Open Graph Protocol -->\n',
     }
   },
+  head() {
+    return {
+      title: this.$t('title'),
+    }
+  },
   methods: {
     generateOgp() {
       if (this.properties.pageTitle !== '') {
