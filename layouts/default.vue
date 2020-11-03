@@ -8,6 +8,11 @@ v-app(light)
   v-main
     v-container
       nuxt
+  v-card(height="64px")
+    v-footer(:padless="true")
+      v-card(flat tile width="100%" class="text-center blue-grey darken-3")
+        v-card-text(class="white--text")
+          span &copy; {{ new Date().getFullYear() }} mktia.
   v-navigation-drawer(v-model='rightDrawer', :right='right', temporary, fixed, dark)
     v-list
       v-list-item(
