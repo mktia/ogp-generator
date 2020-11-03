@@ -120,7 +120,7 @@ export default {
           property: 'og:image',
           content: 'https://ogp.mktia.com/ogp.png',
         },
-        { name: 'twitter:card', content: 'summary_large_card' },
+        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@mktia' },
         { name: 'twitter:creator', content: '@mktia' },
       ],

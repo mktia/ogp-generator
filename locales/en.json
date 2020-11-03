@@ -39,6 +39,6 @@
   },
   "button": "generate",
   "content_types": ["article", "book", "profile", "website"],
-  "twitter_card_types": ["summary", "summary_large_card", "app", "player"],
+  "twitter_card_types": ["summary", "summary_large_image", "app", "player"],
   "about_prefix":"Open Graph recommends specifying the \"og\" prefix mapping, no such markup is required for using Twitter card and HTML meta tags."
 }
