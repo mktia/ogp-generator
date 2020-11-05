@@ -40,6 +40,6 @@
   },
   "button": "OGP生成",
   "content_types": ["article", "book", "profile", "website"],
-  "twitter_card_types": ["summary", "summary_large_card", "app", "player"],
+  "twitter_card_types": ["summary", "summary_large_image", "app", "player"],
   "about_prefix":"Open Graphでは一行目のコードでプレフィックスマッピングを指定することを推奨していますが、TwitterカードやHTMLメタタグはこのコードがなくても問題なく動きます。"
 }
