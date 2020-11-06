@@ -23,7 +23,16 @@ export default {
         content: 'Automatically generate Open Graph Protocol tags',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'alternate', hreflang: 'en', href: 'https://ogp.mktia.com/en' },
+      { rel: 'alternate', hreflang: 'ja', href: 'https://ogp.mktia.com' },
+      {
+        rel: 'alternate',
+        hreflang: 'x-default',
+        href: 'https://ogp.mktia.com/en',
+      },
+    ],
     script: [
       {
         hid: 'GAsrc',
