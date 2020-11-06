@@ -4,7 +4,8 @@
     v-col(cols='12', sm='10', md='8')
       v-img(
         lazy-src='http://placehold.jp/505050/505050/1200x630.png',
-        :src='require("../static/ogp.png")'
+        :srcset='require(`../static/ogp${isAvailableWebp() ? ".webp" : ".png"}`)',
+        :src='require(`../static/ogp${isAvailableWebp() ? ".webp" : ".png"}`)'
       )
   v-row(justify='center', align='center')
     v-col(cols='12', sm='10', md='8')
@@ -127,6 +128,25 @@ export default {
     }
   },
   methods: {
+    isAvailableWebp() {
+      if (process.browser) {
+        var userAgent = window.navigator.userAgent.toLowerCase()
+        if (
+          userAgent.indexOf('msie') !== -1 ||
+          userAgent.indexOf('trident') !== -1
+        ) {
+          return false
+        } else if (userAgent.indexOf('edge') !== -1) {
+          return true
+        } else if (userAgent.indexOf('chrome') !== -1) {
+          return true
+        } else if (userAgent.indexOf('safari') !== -1) {
+          return false
+        } else if (userAgent.indexOf('firefox') !== -1) {
+          return true
+        }
+      }
+    },
     generateOgp() {
       if (this.properties.pageTitle !== '') {
         this.code +=
