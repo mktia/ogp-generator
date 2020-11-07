@@ -91,6 +91,17 @@ sw.*
 # Vim swap files
 *.swp
 
-# firebase settings
+# for firebase
+.firebase
 firebase.json
 .firebaserc
+
+# lint
+.eslintrc.js
+.prettierrc
+
+# editor
+.editorconfig
+
+# yarn generate
+public
