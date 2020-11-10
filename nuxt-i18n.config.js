@@ -6,4 +6,5 @@ export default {
   defaultLocale: 'ja',
   lazy: true,
   langDir: 'locales/',
+  detectBrowserLanguage: false
 }
