@@ -108,6 +108,11 @@ export default {
     return {
       title: this.$t('title'),
       meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: this.$t('meta.description'),
+				},
         { hid: 'og:title', property: 'og:title', content: this.$t('title') },
         {
           hid: 'og:description',
