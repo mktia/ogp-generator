@@ -12,7 +12,7 @@ export default {
     htmlAttrs: {
       prefix: 'og: https://ogp.me/ns#',
     },
-    titleTemplate: '%s - OGP Generator',
+    titleTemplate: '%s',
     title: 'ogp-generator',
     meta: [
       { charset: 'utf-8' },
