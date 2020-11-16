@@ -19,7 +19,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/icon.png' },
+      { rel: 'apple-touch-icon', sizes: '192x192', href: '/icon.png' },
       { rel: 'alternate', hreflang: 'en', href: 'https://ogp.mktia.com/en' },
       { rel: 'alternate', hreflang: 'ja', href: 'https://ogp.mktia.com' },
       {
@@ -86,7 +87,7 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
   'google-adsense': {
-    id: ADSENSE_ID
+    id: ADSENSE_ID,
   },
   generate: {
     dir: 'public',
