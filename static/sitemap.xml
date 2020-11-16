@@ -3,16 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ogp.mktia.com</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://ogp.mktia.com/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ogp.mktia.com" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ogp.mktia.com/en" />
   </url>
   <url>
     <loc>https://ogp.mktia.com/en</loc>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://ogp.mktia.com" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ogp.mktia.com" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ogp.mktia.com/en" />
   </url>
 </urlset>
