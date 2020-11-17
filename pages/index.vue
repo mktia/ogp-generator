@@ -3,7 +3,7 @@
   v-row(justify='center', align='center')
     v-col(cols='12', sm='10', md='8')
       v-img(
-        lazy-src='https://placehold.jp/505050/505050/1200x630.png',
+        :lazy-src='require("../static/placeholder.png")',
         :srcset='require(`../static/ogp${isAvailableWebp() ? ".webp" : ".png"}`)',
         :src='require(`../static/ogp${isAvailableWebp() ? ".webp" : ".png"}`)'
       )
