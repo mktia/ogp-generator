@@ -1,9 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 import i18n from './nuxt-i18n.config'
 
-const GTAG_ID = process.env.GTAG_ID
-const GAcode = `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GTAG_ID}');`
-
 export default {
   target: 'static',
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -28,20 +25,6 @@ export default {
         href: 'https://ogp.mktia.com/en',
       },
     ],
-    script: [
-      {
-        hid: 'GAsrc',
-        src: 'https://www.googletagmanager.com/gtag/js?id=' + GTAG_ID,
-      },
-      {
-        hid: 'GAcode',
-        innerHTML: GAcode,
-      },
-    ],
-    __dangerouslyDisableSanitizersByTagID: {
-      GAsrc: ['innerHTML'],
-      GAcode: ['innerHTML'],
-    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -65,6 +48,7 @@ export default {
   modules: [
     ['nuxt-i18n', i18n],
     ['@nuxtjs/google-adsense', { id: process.env.ADSENSE_ID }],
+    ['@nuxtjs/google-gtag', { id: process.env.GTAG_ID, debug: true }],
   ],
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
