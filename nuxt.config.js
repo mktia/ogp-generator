@@ -17,12 +17,12 @@ export default {
     link: [
       { rel: 'icon', type: 'image/png', href: '/icon.png' },
       { rel: 'apple-touch-icon', sizes: '192x192', href: '/icon.png' },
-      { rel: 'alternate', hreflang: 'en', href: 'https://ogp.mktia.com/en' },
+      { rel: 'alternate', hreflang: 'en', href: 'https://ogp.mktia.com/en/' },
       { rel: 'alternate', hreflang: 'ja', href: 'https://ogp.mktia.com' },
       {
         rel: 'alternate',
         hreflang: 'x-default',
-        href: 'https://ogp.mktia.com/en',
+        href: 'https://ogp.mktia.com/en/',
       },
     ],
   },
